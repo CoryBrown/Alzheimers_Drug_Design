@@ -8,28 +8,24 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
-    - name: Use Node.js 16.x
-      uses: actions/setup-node@v2
-      with:
-        node-version: '16.x'
     - uses: actions/checkout@v2
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
-    - name: Install Dependencies
+    - name: Setup Conda
       run: |
-        pip install -r requirements.txt
+        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+        bash miniconda.sh -b -p $HOME/miniconda
+        source "$HOME/miniconda/etc/profile.d/conda.sh"
+        conda config --set always_yes yes --set changeps1 no
+        conda update -q conda
+        conda info -a
+    - name: Create and Activate Conda Environment
+      run: |
+        conda env create -f environment.yml
+        conda activate myenv
     - name: Run Tests
       run: |
         python -m unittest discover tests
-    - name: Deploy to Google Cloud (Optional)
-      if: github.ref == 'refs/heads/main'
-      run: |
-        ./deploy_to_gcp.sh
+
 
 
