@@ -50,9 +50,9 @@ For a detailed project plan, please refer to [Project Plan](Project_Plan.md).
 
 To run this project, you will need to add the following environment variables to your `.env` file:
 
-- `POSTGRES_USER`: Username for the PostgreSQL database. No default value.
-- `POSTGRES_PASSWORD`: Password for the PostgreSQL database. No default value.
-- `POSTGRES_DB`: Name of the PostgreSQL database. Default is `mydatabase`.
+- `POSTGRES_USER`: Cory
+- `POSTGRES_PASSWORD`: password
+- `POSTGRES_DB`: ADD
 
 Refer to `.env.sample` for a template.
 
