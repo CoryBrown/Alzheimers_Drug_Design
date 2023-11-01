@@ -21,8 +21,12 @@ jobs:
         conda info -a
     - name: Create and Activate Conda Environment
       run: |
+        #!/bin/bash
+        eval "$(conda shell.bash hook)"
+        conda update -n base -c defaults conda
         conda env create -f environment.yml
-        conda activate myenv
+        conda activate ADD_env
+
     - name: Run Tests
       run: |
         python -m unittest discover tests
