@@ -1,53 +1,73 @@
-# Alzheimers_Drug_Design
+# Alzheimer's Drug Design Project
+## Overview
+This project aims to design potential drug compounds for Alzheimer's disease using a combination of molecular simulations, machine learning, and a web application for visualization. The project is structured into five phases, from initial setup and Dockerization to final deployment.
 
-## Project Overview
+## Project Phases
+Initial Setup, Dockerization, and GCP Configuration
+Database, Frontend Development, and ETL Processes
+Machine Learning on SMILES Data
+Molecular Dynamics Simulations
+Finalization and Deployment
+For a detailed breakdown of each phase, please refer to the project plan.
 
-This project aims to perform data analysis on molecular data, particularly focusing on SMILES (Simplified Molecular Input Line Entry System) data. The project incorporates Natural Language Processing (NLP) and Genetic Algorithms for feature extraction and molecule optimization. It also includes a web application for data visualization and interaction.
+## Current Plan for Directory Structure
+Alzheimers_Drug_Design/
+│
+├── README.md
+├── docker-compose.yml
+├── .gitignore
+├── environment.yml
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── assets/
+│   │   └── utils/
+│   ├── public/
+│   ├── package.json
+│   └── tests/
+│       ├── unit/
+│       └── integration/
+│
+├── backend/
+│   ├── src/
+│   │   ├── routes/
+│   │   ├── controllers/
+│   │   ├── models/
+│   │   └── middleware/
+│   ├── config/
+│   ├── package.json
+│   └── tests/
+│       ├── unit/
+│       └── integration/
+│
+├── database/
+│   ├── migrations/
+│   ├── seeds/
+│   ├── schema.sql
+│   └── tests/
+│       └── db_tests/
+│
+├── machine_learning/
+│   ├── data/
+│   ├── models/
+│   ├── scripts/
+│   └── tests/
+│       ├── data_tests/
+│       └── model_tests/
+│
+└── molecular_dynamics/
+    ├── simulations/
+    ├── scripts/
+    └── tests/
+        └── simulation_tests/
 
-## Table of Contents
+## Getting Started
+Will be updated as the project progresses...
 
-- [Project Overview](#project-overview)
-- [Table of Contents](#table-of-contents)
-- [Technologies Used](#technologies-used)
-- [Project Plan](#project-plan)
-- [Environment Variables](#environment-variables)
-- [Getting Started](#getting-started)
-
-## Technologies Used
-
-- PostgreSQL
-- Docker
-- React.js
-- Natural Language Processing
-- Genetic Algorithms
-- OpenMM for Molecular Dynamics Simulations
-
-## Project Plan
-
-### Completed Tasks
-
-1. **Project Planning and Setup**
-    - Finalized the project objective, scope, and deliverables.
-    - Identified initial data sources for molecular data.
-    - Drafted a project timeline.
-
-2. **Environment Setup**
-    - Installed Docker and familiarized with containerization concepts.
-    - Containerized PostgreSQL using Docker.
-    - Initialized a Git repository and connected it with GitHub.
-
-### Upcoming Tasks
-
-1. **Data Collection and Initial Database Setup**
-2. **Frontend Development**
-3. **NLP on SMILES Data**
-4. **Genetic Algorithm on SMILES Data**
-5. **Molecular Dynamics (MD) Simulations Preparation and Execution**
-
-For a detailed project plan, please refer to [Project Plan](Project_Plan.md).
-
-## Environment Variables
-
+Clone the Repository: git clone [repository-link]
+Navigate to Project Directory: cd Alzheimers-Drug-Design-Project
+Set Up Environment: 
 To run this project, you will need to add the following environment variables to your `.env` file:
 
 - `POSTGRES_USER`: Cory
@@ -55,6 +75,23 @@ To run this project, you will need to add the following environment variables to
 - `POSTGRES_DB`: ADD
 
 Refer to `.env.sample` for a template.
+Run Docker Compose: docker-compose up
+
+## Testing
+Automated tests are available for each major component of the project. Navigate to the respective directory and run the tests using the appropriate testing framework.
+
+## Budget Allocation
+Google Cloud Platform (GCP) services: $120
+Database hosting (PostgreSQL on GCP Cloud SQL): $40
+Miscellaneous (domain, SSL certificate, etc.): $40
+Total Budget: $200
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Environment Variables
+
+
 
 ## Getting Started
 
