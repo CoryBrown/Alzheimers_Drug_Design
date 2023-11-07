@@ -11,8 +11,8 @@ Finalization and Deployment
 For a detailed breakdown of each phase, please refer to the project plan.
 
 ## Current Plan for Directory Structure
-Alzheimers_Drug_Design/
-│
+Alzheimers_Drug_Design/<br>
+│<br>
 ├── README.md
 ├── docker-compose.yml
 ├── .gitignore
@@ -64,6 +64,10 @@ Alzheimers_Drug_Design/
 
 ## Getting Started
 Will be updated as the project progresses...
+
+### Prerequisites
+- Docker and Docker Compose installed on your machine
+- Git (for cloning the repository)
 
 Clone the Repository: git clone [repository-link]
 Navigate to Project Directory: cd Alzheimers-Drug-Design-Project
