@@ -69,7 +69,7 @@ Will be updated as the project progresses...
 - Docker and Docker Compose installed on your machine
 - Git (for cloning the repository)
 
-Clone the Repository: git clone [repository-link]
+Clone the Repository: git clone [repository-link](https://github.com/CoryBrown/Alzheimers_Drug_Design.git)
 Navigate to Project Directory: cd Alzheimers-Drug-Design-Project
 Set Up Environment: 
 To run this project, you will need to add the following environment variables to your `.env` file:
