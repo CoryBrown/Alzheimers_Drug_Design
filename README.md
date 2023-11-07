@@ -9,6 +9,9 @@ This project aims to design potential drug compounds for Alzheimer's disease usi
 - Molecular Dynamics Simulations
 - Finalization and Deployment
 
+## Project Plan
+For a detailed breakdown of the project plan, please see [PROJECT_PLAN.md](PROJECT_PLAN.md).
+
 ## Current Plan for Directory Structure
 Alzheimers_Drug_Design/<br>
 │<br>
