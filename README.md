@@ -19,6 +19,7 @@ Alzheimers_Drug_Design/<br>
 ├── docker-compose.yml<br>
 ├── .gitignore<br>
 ├── environment.yml<br>
+├── PROJECT_PLAN.md
 │<br>
 ├── frontend/<br>
 │   ├── src/<br>
