@@ -2,6 +2,9 @@
 ## Overview
 This project aims to design potential drug compounds for Alzheimer's disease using a combination of molecular simulations, machine learning, and a web application for visualization. The project is structured into five phases, from initial setup and Dockerization to final deployment.
 
+## Introduction
+Alzheimer's disease is a progressive neurologic disorder that causes the brain to shrink and brain cells to die. This project aims to leverage computational approaches to design drugs that can potentially alter the course of the disease. Through the use of molecular simulations, machine learning algorithms, and a web application for visualization, we hope to accelerate the discovery and development of effective therapeutics for Alzheimer's disease.
+
 ## Project Phases
 - Initial Setup, Dockerization, and GCP Configuration
 - Database, Frontend Development, and ETL Processes
@@ -72,7 +75,7 @@ Will be updated as the project progresses...
 - Docker (version 24.0.5 or higher recommended)
 - Docker Compose (version 2.23.0 or higher recommended)
 - Git (for cloning the repository)
-- Node.js (version 20.8.0 or higher)
+- Node.js (LTS version recommended)
 
 ### Clone the Repository 
 ```
@@ -83,19 +86,13 @@ git clone https://github.com/CoryBrown/Alzheimers_Drug_Design.git
 cd Alzheimers-Drug-Design-Project
 ```
 ### Set Up Environment
-To run this project, you will need to add the following environment variables to your `.env` file:
-```
-POSTGRES_USER=Cory
-POSTGRES_PASSWORD=password
-POSTGRES_DB=ADD
-```
-Refer to `.env.sample` for a template.
+- Rename `.env.sample` to `.env`.
+- Fill in the necessary environmental variables.
 ### Build and Run Docker Containers
-In the directory containing `docker-compose.yml`, run:
 ```
 docker-compose up
 ```
-This command will build the Docker images for the database and backend if they haven't been built before and start the containers.
+This will build the Docker images for the database, backend, and frontend if they haven't been built before, and start the containers.
 ## Testing
 Automated tests for each major component of the project will be available. Instructions for running the tests will be added as the project progresses. This will ensure that all features are working as expected and maintain the quality of the project.
 
