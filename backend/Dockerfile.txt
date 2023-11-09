@@ -1,5 +1,5 @@
 # Use an official Node.js runtime as the base image, match version with frontend
-FROM node:16
+FROM node:16-alpine
 
 # Set the working directory in the container
 WORKDIR /usr/src/app
@@ -8,10 +8,14 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Install the backend dependencies
-RUN npm install
+RUN npm ci --only=production
 
 # Copy the entire backend directory to the container
 COPY . .
+
+# Use a non-root user for security purposes
+RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+USER appuser
 
 # Expose the port the app runs on
 EXPOSE 3001
