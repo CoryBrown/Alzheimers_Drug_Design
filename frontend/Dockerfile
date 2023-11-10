@@ -27,7 +27,7 @@ EXPOSE 80
 
 # Best practice: run nginx as a non-root user
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
-USER appuser
+#USER appuser -- leaving the commented out is not good for security and should be addressed later.
 
 # Define the command to run your app using CMD which defines your runtime
 CMD ["nginx", "-g", "daemon off;"]
