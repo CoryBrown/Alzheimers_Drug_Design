@@ -8,6 +8,7 @@
 - Initial project planning.
 - Dockerized PostgreSQL for local development and testing.
 - Dockerized minimal React frontend.
+
 **Tasks:**
 - Source Alzheimer's datasets relevant to siRNA therapy for PostgreSQL integration.
 - Set up and configure AWS RDS for PostgreSQL to manage Alzheimer's datasets.
